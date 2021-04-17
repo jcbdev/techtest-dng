@@ -1,0 +1,43 @@
+{
+  "name": "techtest-dng",
+  "version": "0.0.1",
+  "description": "DNG Typescript techtest",
+  "main": "./lib/dng-test.js",
+  "bin": {
+    "dng-test": "./lib/dng-test.js"
+  },
+  "repository": "git@github.com:jcbdev/techtest-dng.git",
+  "author": "James Barker <james@jcbdevelopment.co.uk>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "ts-node src/dng-test.ts",
+    "test": "jest --coverage",
+    "build": "tsc -p .",
+    "clean": "rm -rf ./node_modules ./package-lock.json ./yarn.lock",
+    "lint": "eslint . --ext .ts,.tsx --quiet"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.22",
+    "chalk": "^4.1.0",
+    "commander": "^7.2.0",
+    "figlet": "^1.5.0",
+    "json-colorizer": "^2.2.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.1",
+    "@types/figlet": "^1.5.0",
+    "@types/node": "^14.14.41",
+    "@typescript-eslint/eslint-plugin": "~4.16.1",
+    "@typescript-eslint/parser": "~4.16.1",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "ts-jest": "^26.5.5",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4",
+    "eslint": "~7.21.0",
+    "eslint-config-prettier": "~8.1.0",
+    "eslint-plugin-jest": "~24.1.5"
+  }
+}
